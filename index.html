@@ -16,6 +16,21 @@
 </head>
 <body>
   <img src="TrellisMainPage.png" alt="Trellis Platform" width="1343" height="1322">
- <script>(()=>{const e=document.createElement("script");e.src="https://cdn.jsdelivr.net/npm/iframe-resizer@4.2.11/js/iframeResizer.min.js",document.body.appendChild(e),e.addEventListener("load",function(){const e=document.createElement("iframe");e.id="crowdsmart-embed-app",e.src="https://embed.crowdsmartstage.ai/evaluation/trellis/412a819a-e71d-11ea-9f28-0ae63bf3e830/69ab878a-766b-11eb-aa2e-0ad589fedacf",document.body.appendChild(e),e.addEventListener("load",function(){iFrameResize({},"#crowdsmart-embed-app")})})})();</script>
+<script>
+  (() => {
+    const resizer = document.createElement('script')
+    resizer.src = 'https://cdn.jsdelivr.net/npm/iframe-resizer@4.2.11/js/iframeResizer.min.js'
+    document.body.appendChild(resizer)
+    resizer.addEventListener('load', function () {
+      const iframe = document.createElement('iframe')
+      iframe.id = 'crowdsmart-embed-app'
+      iframe.src = 'https://www.crowdsmartstage.ai/embed/evaluation/trellis/49ca37f6-2533-11eb-9c38-0ae63bf3e830/398c2eb6-766a-11eb-bd9c-0ad589fedacf'
+      document.body.appendChild(iframe)
+      iframe.addEventListener('load', function () {
+        iFrameResize({}, '#crowdsmart-embed-app')
+      })
+    })
+  })()
+</script>
   </body>
 </html>
